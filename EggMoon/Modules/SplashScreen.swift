@@ -9,7 +9,7 @@ struct SplashScreen: View {
             Image(.Images.BG)
                 .resize()
             
-            Text("EggMoon")
+            Text("EggsMoon")
                 .foregroundStyle(.white)
                 .font(.system(size: 60, weight: .light))
         }
