@@ -6,14 +6,81 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7E6E8FF02E9F61DD00075D2F /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 7E6E8FEF2E9F61DD00075D2F /* OneSignalExtension */; };
+		7E6E8FF22E9F61DD00075D2F /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 7E6E8FF12E9F61DD00075D2F /* OneSignalFramework */; };
+		7E6E8FF42E9F61DD00075D2F /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 7E6E8FF32E9F61DD00075D2F /* OneSignalInAppMessages */; };
+		7EC31AD02E9F57AC002D8761 /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC31ACF2E9F57AC002D8761 /* FirebaseAnalyticsIdentitySupport */; };
+		7EC31AD22E9F57AC002D8761 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC31AD12E9F57AC002D8761 /* FirebaseRemoteConfig */; };
+		7EC31AE72E9F612B002D8761 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7EC31AE02E9F612B002D8761 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EC31AE52E9F612B002D8761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E228EB22E8F9E4B00547964 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EC31ADF2E9F612B002D8761;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7EC31ACC2E9F5732002D8761 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7EC31AE72E9F612B002D8761 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7E228EBA2E8F9E4B00547964 /* EggMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC31AE02E9F612B002D8761 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7EC31ABB2E9F56D9002D8761 /* Exceptions for "EggMoon" folder in "EggMoon" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7E228EB92E8F9E4B00547964 /* EggMoon */;
+		};
+		7EC31AEB2E9F612B002D8761 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7EC31ADF2E9F612B002D8761 /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7E228EBC2E8F9E4B00547964 /* EggMoon */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7EC31ABB2E9F56D9002D8761 /* Exceptions for "EggMoon" folder in "EggMoon" target */,
+			);
 			path = EggMoon;
+			sourceTree = "<group>";
+		};
+		7EC31AC12E9F5732002D8761 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		7EC31AE12E9F612B002D8761 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7EC31AEB2E9F612B002D8761 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +90,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC31AD02E9F57AC002D8761 /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				7E6E8FF22E9F61DD00075D2F /* OneSignalFramework in Frameworks */,
+				7E6E8FF42E9F61DD00075D2F /* OneSignalInAppMessages in Frameworks */,
+				7EC31AD22E9F57AC002D8761 /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EC31ADD2E9F612B002D8761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6E8FF02E9F61DD00075D2F /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				7E228EBC2E8F9E4B00547964 /* EggMoon */,
+				7EC31AC12E9F5732002D8761 /* OneSignalNotificationServiceExtension */,
+				7EC31AE12E9F612B002D8761 /* OneSignalNotificationServiceExtension */,
 				7E228EBB2E8F9E4B00547964 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				7E228EBA2E8F9E4B00547964 /* EggMoon.app */,
+				7EC31AE02E9F612B002D8761 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,20 +137,49 @@
 				7E228EB62E8F9E4B00547964 /* Sources */,
 				7E228EB72E8F9E4B00547964 /* Frameworks */,
 				7E228EB82E8F9E4B00547964 /* Resources */,
+				7EC31ACC2E9F5732002D8761 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7EC31AE62E9F612B002D8761 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7E228EBC2E8F9E4B00547964 /* EggMoon */,
 			);
 			name = EggMoon;
 			packageProductDependencies = (
+				7EC31ACF2E9F57AC002D8761 /* FirebaseAnalyticsIdentitySupport */,
+				7EC31AD12E9F57AC002D8761 /* FirebaseRemoteConfig */,
+				7E6E8FF12E9F61DD00075D2F /* OneSignalFramework */,
+				7E6E8FF32E9F61DD00075D2F /* OneSignalInAppMessages */,
 			);
 			productName = EggMoon;
 			productReference = 7E228EBA2E8F9E4B00547964 /* EggMoon.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7EC31ADF2E9F612B002D8761 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EC31AE82E9F612B002D8761 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				7EC31ADC2E9F612B002D8761 /* Sources */,
+				7EC31ADD2E9F612B002D8761 /* Frameworks */,
+				7EC31ADE2E9F612B002D8761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7EC31AE12E9F612B002D8761 /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				7E6E8FEF2E9F61DD00075D2F /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 7EC31AE02E9F612B002D8761 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +194,9 @@
 					7E228EB92E8F9E4B00547964 = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					7EC31ADF2E9F612B002D8761 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = 7E228EB52E8F9E4B00547964 /* Build configuration list for PBXProject "EggMoon" */;
@@ -94,18 +208,30 @@
 			);
 			mainGroup = 7E228EB12E8F9E4B00547964;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7EC31ACE2E9F57AC002D8761 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7E6E8FEE2E9F61DD00075D2F /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7E228EBB2E8F9E4B00547964 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7E228EB92E8F9E4B00547964 /* EggMoon */,
+				7EC31ADF2E9F612B002D8761 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7E228EB82E8F9E4B00547964 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EC31ADE2E9F612B002D8761 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +248,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EC31ADC2E9F612B002D8761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EC31AE62E9F612B002D8761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EC31ADF2E9F612B002D8761 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 7EC31AE52E9F612B002D8761 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7E228EC32E8F9E4D00547964 /* Debug */ = {
@@ -256,7 +397,9 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EggMoon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EggsMoon;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This data will be used to deliver personalized ads and improve your app experience";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -269,7 +412,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eggs.moon.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -295,7 +438,9 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EggMoon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EggsMoon;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This data will be used to deliver personalized ads and improve your app experience";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,10 +453,76 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eggs.moon.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7EC31AE92E9F612B002D8761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eggs.moon.app.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7EC31AEA2E9F612B002D8761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eggs.moon.app.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -343,7 +554,63 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		7EC31AE82E9F612B002D8761 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EC31AE92E9F612B002D8761 /* Debug */,
+				7EC31AEA2E9F612B002D8761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E6E8FEE2E9F61DD00075D2F /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
+		7EC31ACE2E9F57AC002D8761 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E6E8FEF2E9F61DD00075D2F /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E6E8FEE2E9F61DD00075D2F /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		7E6E8FF12E9F61DD00075D2F /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E6E8FEE2E9F61DD00075D2F /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		7E6E8FF32E9F61DD00075D2F /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E6E8FEE2E9F61DD00075D2F /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+		7EC31ACF2E9F57AC002D8761 /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC31ACE2E9F57AC002D8761 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		7EC31AD12E9F57AC002D8761 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC31ACE2E9F57AC002D8761 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E228EB22E8F9E4B00547964 /* Project object */;
 }

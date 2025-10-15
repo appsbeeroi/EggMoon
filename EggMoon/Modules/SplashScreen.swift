@@ -9,12 +9,18 @@ struct SplashScreen: View {
             Image(.Images.BG)
                 .resize()
             
-            Text("EggsMoon")
-                .foregroundStyle(.white)
-                .font(.system(size: 60, weight: .light))
+            VStack {
+                Text("EggsMoon")
+                    .foregroundStyle(.white)
+                    .font(.system(size: 60, weight: .light))
+                
+                ProgressView()
+                    .scaleEffect(1.5)
+                    .tint(.white)
+            }
         }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        .onReceive(NotificationCenter.default.publisher(for: .splashTransition)) { _ in
+            withAnimation {
                 isMainSwitchedOn = true
             }
         }
